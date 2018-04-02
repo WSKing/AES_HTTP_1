@@ -1,0 +1,577 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CF4372920720D4000A397C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4372820720D4000A397C4 /* AppDelegate.m */; };
+		7CF4372C20720D4000A397C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4372B20720D4000A397C4 /* ViewController.m */; };
+		7CF4372F20720D4000A397C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4372D20720D4000A397C4 /* Main.storyboard */; };
+		7CF4373120720D4000A397C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4373020720D4000A397C4 /* Assets.xcassets */; };
+		7CF4373420720D4000A397C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF4373220720D4000A397C4 /* LaunchScreen.storyboard */; };
+		7CF4373720720D4000A397C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4373620720D4000A397C4 /* main.m */; };
+		7CF4374120720D4000A397C4 /* AES_HTTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4374020720D4000A397C4 /* AES_HTTPTests.m */; };
+		7CF4374C20720D4000A397C4 /* AES_HTTPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4374B20720D4000A397C4 /* AES_HTTPUITests.m */; };
+		7CF4376020720D6400A397C4 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4375A20720D6400A397C4 /* SecurityUtil.m */; };
+		7CF4376120720D6400A397C4 /* OriginalHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4375C20720D6400A397C4 /* OriginalHttpTool.m */; };
+		7CF4376220720D6400A397C4 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF4375F20720D6400A397C4 /* NSData+AES128.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF4373D20720D4000A397C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF4371C20720D4000A397C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF4372320720D4000A397C4;
+			remoteInfo = AES_HTTP;
+		};
+		7CF4374820720D4000A397C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF4371C20720D4000A397C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF4372320720D4000A397C4;
+			remoteInfo = AES_HTTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CF4372420720D4000A397C4 /* AES_HTTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AES_HTTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF4372720720D4000A397C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CF4372820720D4000A397C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CF4372A20720D4000A397C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CF4372B20720D4000A397C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CF4372E20720D4000A397C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CF4373020720D4000A397C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CF4373320720D4000A397C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CF4373520720D4000A397C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF4373620720D4000A397C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CF4373C20720D4000A397C4 /* AES_HTTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES_HTTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF4374020720D4000A397C4 /* AES_HTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES_HTTPTests.m; sourceTree = "<group>"; };
+		7CF4374220720D4000A397C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF4374720720D4000A397C4 /* AES_HTTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES_HTTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF4374B20720D4000A397C4 /* AES_HTTPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES_HTTPUITests.m; sourceTree = "<group>"; };
+		7CF4374D20720D4000A397C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF4375A20720D6400A397C4 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		7CF4375B20720D6400A397C4 /* NSData+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128.h"; sourceTree = "<group>"; };
+		7CF4375C20720D6400A397C4 /* OriginalHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalHttpTool.m; sourceTree = "<group>"; };
+		7CF4375D20720D6400A397C4 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		7CF4375E20720D6400A397C4 /* OriginalHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalHttpTool.h; sourceTree = "<group>"; };
+		7CF4375F20720D6400A397C4 /* NSData+AES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF4372120720D4000A397C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4373920720D4000A397C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4374420720D4000A397C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CF4371B20720D4000A397C4 = {
+			isa = PBXGroup;
+			children = (
+				7CF4372620720D4000A397C4 /* AES_HTTP */,
+				7CF4373F20720D4000A397C4 /* AES_HTTPTests */,
+				7CF4374A20720D4000A397C4 /* AES_HTTPUITests */,
+				7CF4372520720D4000A397C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF4372520720D4000A397C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4372420720D4000A397C4 /* AES_HTTP.app */,
+				7CF4373C20720D4000A397C4 /* AES_HTTPTests.xctest */,
+				7CF4374720720D4000A397C4 /* AES_HTTPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF4372620720D4000A397C4 /* AES_HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4375920720D6400A397C4 /* LYHttpTool */,
+				7CF4372720720D4000A397C4 /* AppDelegate.h */,
+				7CF4372820720D4000A397C4 /* AppDelegate.m */,
+				7CF4372A20720D4000A397C4 /* ViewController.h */,
+				7CF4372B20720D4000A397C4 /* ViewController.m */,
+				7CF4372D20720D4000A397C4 /* Main.storyboard */,
+				7CF4373020720D4000A397C4 /* Assets.xcassets */,
+				7CF4373220720D4000A397C4 /* LaunchScreen.storyboard */,
+				7CF4373520720D4000A397C4 /* Info.plist */,
+				7CF4373620720D4000A397C4 /* main.m */,
+			);
+			path = AES_HTTP;
+			sourceTree = "<group>";
+		};
+		7CF4373F20720D4000A397C4 /* AES_HTTPTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4374020720D4000A397C4 /* AES_HTTPTests.m */,
+				7CF4374220720D4000A397C4 /* Info.plist */,
+			);
+			path = AES_HTTPTests;
+			sourceTree = "<group>";
+		};
+		7CF4374A20720D4000A397C4 /* AES_HTTPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4374B20720D4000A397C4 /* AES_HTTPUITests.m */,
+				7CF4374D20720D4000A397C4 /* Info.plist */,
+			);
+			path = AES_HTTPUITests;
+			sourceTree = "<group>";
+		};
+		7CF4375920720D6400A397C4 /* LYHttpTool */ = {
+			isa = PBXGroup;
+			children = (
+				7CF4375A20720D6400A397C4 /* SecurityUtil.m */,
+				7CF4375B20720D6400A397C4 /* NSData+AES128.h */,
+				7CF4375C20720D6400A397C4 /* OriginalHttpTool.m */,
+				7CF4375D20720D6400A397C4 /* SecurityUtil.h */,
+				7CF4375E20720D6400A397C4 /* OriginalHttpTool.h */,
+				7CF4375F20720D6400A397C4 /* NSData+AES128.m */,
+			);
+			path = LYHttpTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF4372320720D4000A397C4 /* AES_HTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF4375020720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTP" */;
+			buildPhases = (
+				7CF4372020720D4000A397C4 /* Sources */,
+				7CF4372120720D4000A397C4 /* Frameworks */,
+				7CF4372220720D4000A397C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AES_HTTP;
+			productName = AES_HTTP;
+			productReference = 7CF4372420720D4000A397C4 /* AES_HTTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CF4373B20720D4000A397C4 /* AES_HTTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF4375320720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTPTests" */;
+			buildPhases = (
+				7CF4373820720D4000A397C4 /* Sources */,
+				7CF4373920720D4000A397C4 /* Frameworks */,
+				7CF4373A20720D4000A397C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF4373E20720D4000A397C4 /* PBXTargetDependency */,
+			);
+			name = AES_HTTPTests;
+			productName = AES_HTTPTests;
+			productReference = 7CF4373C20720D4000A397C4 /* AES_HTTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CF4374620720D4000A397C4 /* AES_HTTPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF4375620720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTPUITests" */;
+			buildPhases = (
+				7CF4374320720D4000A397C4 /* Sources */,
+				7CF4374420720D4000A397C4 /* Frameworks */,
+				7CF4374520720D4000A397C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF4374920720D4000A397C4 /* PBXTargetDependency */,
+			);
+			name = AES_HTTPUITests;
+			productName = AES_HTTPUITests;
+			productReference = 7CF4374720720D4000A397C4 /* AES_HTTPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF4371C20720D4000A397C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = WSK;
+				TargetAttributes = {
+					7CF4372320720D4000A397C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7CF4373B20720D4000A397C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CF4372320720D4000A397C4;
+					};
+					7CF4374620720D4000A397C4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CF4372320720D4000A397C4;
+					};
+				};
+			};
+			buildConfigurationList = 7CF4371F20720D4000A397C4 /* Build configuration list for PBXProject "AES_HTTP" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF4371B20720D4000A397C4;
+			productRefGroup = 7CF4372520720D4000A397C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF4372320720D4000A397C4 /* AES_HTTP */,
+				7CF4373B20720D4000A397C4 /* AES_HTTPTests */,
+				7CF4374620720D4000A397C4 /* AES_HTTPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF4372220720D4000A397C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF4373420720D4000A397C4 /* LaunchScreen.storyboard in Resources */,
+				7CF4373120720D4000A397C4 /* Assets.xcassets in Resources */,
+				7CF4372F20720D4000A397C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4373A20720D4000A397C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4374520720D4000A397C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF4372020720D4000A397C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF4376120720D6400A397C4 /* OriginalHttpTool.m in Sources */,
+				7CF4372C20720D4000A397C4 /* ViewController.m in Sources */,
+				7CF4373720720D4000A397C4 /* main.m in Sources */,
+				7CF4372920720D4000A397C4 /* AppDelegate.m in Sources */,
+				7CF4376220720D6400A397C4 /* NSData+AES128.m in Sources */,
+				7CF4376020720D6400A397C4 /* SecurityUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4373820720D4000A397C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF4374120720D4000A397C4 /* AES_HTTPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF4374320720D4000A397C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF4374C20720D4000A397C4 /* AES_HTTPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CF4373E20720D4000A397C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF4372320720D4000A397C4 /* AES_HTTP */;
+			targetProxy = 7CF4373D20720D4000A397C4 /* PBXContainerItemProxy */;
+		};
+		7CF4374920720D4000A397C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF4372320720D4000A397C4 /* AES_HTTP */;
+			targetProxy = 7CF4374820720D4000A397C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CF4372D20720D4000A397C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF4372E20720D4000A397C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CF4373220720D4000A397C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF4373320720D4000A397C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF4374E20720D4000A397C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CF4374F20720D4000A397C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF4375120720D4000A397C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CF4375220720D4000A397C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CF4375420720D4000A397C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AES_HTTP.app/AES_HTTP";
+			};
+			name = Debug;
+		};
+		7CF4375520720D4000A397C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AES_HTTP.app/AES_HTTP";
+			};
+			name = Release;
+		};
+		7CF4375720720D4000A397C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AES_HTTP;
+			};
+			name = Debug;
+		};
+		7CF4375820720D4000A397C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES_HTTPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WangShankun.AES-HTTPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AES_HTTP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF4371F20720D4000A397C4 /* Build configuration list for PBXProject "AES_HTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF4374E20720D4000A397C4 /* Debug */,
+				7CF4374F20720D4000A397C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF4375020720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF4375120720D4000A397C4 /* Debug */,
+				7CF4375220720D4000A397C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF4375320720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF4375420720D4000A397C4 /* Debug */,
+				7CF4375520720D4000A397C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF4375620720D4000A397C4 /* Build configuration list for PBXNativeTarget "AES_HTTPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF4375720720D4000A397C4 /* Debug */,
+				7CF4375820720D4000A397C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF4371C20720D4000A397C4 /* Project object */;
+}
